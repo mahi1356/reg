@@ -1,7 +1,6 @@
 # reg
-Data format is JSON. No database at this moment. This is a work in progress project.
 
-This form is designed to implement a simple purchase with promotion rules written in javascript and jQuery.
+This form is a simple purchase form with promotion rules written in javascript and jQuery.
 
 Two drop down list enable users to look for their items. When an option from first drop down list selected, the second drop down list will be populated with associate items.
 
