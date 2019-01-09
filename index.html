@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/myjs.js"></script>
+    <script type="text/jason" src="finalproject.json"></script>
+</head>
+
+<body>
+    <div>
+        <p>
+        This form is designed to implement a simple purchase with promotion rules. 
+        Two drop down list enable users to look for their items. When MovieDatabase selected from first drop down list, the second drop down list will be filled with name, director and genre. </p>     
+
+        <p>When any of them selected , a new table shows up with associated data. The cells in table for genre and director are for information. Movie names inside the table are selectable. When a movie or movies selected, associated price shows up.Only happy path is implemented for this section meaning de-selecting and re-selecting are not implemented and bug free </p>
+
+        <p>
+        <b>Promotion rules:</b><br>
+        10% off  for students or senior radio button<br>
+        5% off if promotion code: <b>final</b> is entered<br>
+        If both radio button and promotion code entered, total of 15% will be reduced from the price and appropriate message and calculation show up on the page. <br><br>
+         
+        <b>Promotion rules are implemented and tested:</b><br>
+        If only one of them selected<br>
+        If both selected(whether code is correct or not)<br>
+        If wrong code entered<br>
+        If no code entered<br>
+
+        <p>By design, “thank you” button will reset the form. </p>
+         The following path is implemented 1) select MovieData base 2) select name 3) select movies(see price adds up 4) select radio buttons 5) enter promotion code 6) see the result reduced price and a message <br>
+        <p> If you want to see another variation for promotion e.g. only radio button or only promotion code or none , please reset the form first by clicking on thank you button.<br>
+
+    </div>
+    <form autocomplete="off" action="" name="form" id="form">
+        <br>
+        <br>
+        <fieldset id="Info"> &nbsp;&nbsp;
+            <br>
+            <legend>Purchase Form</legend>
+            <div id="selects">
+                <div id="select1" style="float:left;margin-right:15px;"> Select Category
+                    <br>
+                    <select name="firstSelect" id="firstSelect">
+                        <option>----</option>
+                        &nbsp;
+                    </select>
+                </div>
+                <div id="select2" style="float:left;margin-right:15px;">
+                    <br>
+                    <select name="secondSelect" id="secondSelect">
+                        <option>----</option>
+                        &nbsp;
+                    </select>
+                </div >
+            </div>
+            <br>
+            <div style="margin-left:1px;margin-top:40px;">
+                <p id="demo"></p><br>
+                
+            </div>
+
+            <div>
+                <input type="radio" name="radio" class="radio" id ="student_radio"> Student
+                <br>
+                <input type="radio" name="radio" class="radio" id ="senior_radio"> Senior
+                <br>
+                <input type="text" id="promo">
+                <button type="button" id="button_promo">Enter promo code</button>
+                <p id="promo_result"></p>
+
+            </div>
+            <br><p id="item_price"></p>
+            <p id = "message_price"></p>
+            <br>
+            <button type="submit" id="submitBtn" name="submit">Thank you</button>
+            <br>
+        </fieldset>
+        <br>
+    </form>
+
+</body>
+
+</html>

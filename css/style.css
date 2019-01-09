@@ -1,0 +1,15 @@
+td {
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 5px 10px;
+}
+
+.clicked {
+  background-color: rgb(168, 224, 217);
+  border: 3px solid rgb(33, 203, 237);
+  padding: 5px 10px;
+}
+
+div.relative {
+  position: relative;
+  left: 10px;
+}
