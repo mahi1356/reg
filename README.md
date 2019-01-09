@@ -1,4 +1,4 @@
-# reg
+# Registration form with promotion rules
 
 This form is a simple purchase form with promotion rules written in javascript and jQuery.
 
